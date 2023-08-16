@@ -50,7 +50,7 @@ h1 {
 }
 
 #nav-rps {
-  background-image: url(/images/background-rps.jpg);
+  background-image: url(images/background-rps.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -70,7 +70,7 @@ h1 {
 }
 /* Dice Section  */
 #section-dice {
-  background-image: url(/images/coin-background.jpg);
+  background-image: url(images/coin-background.jpg);
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -86,7 +86,7 @@ h1 {
 
 /* Coin Section  */
 #coin-footer {
-  background-image: url(/images/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg);
+  background-image: url(images/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -277,6 +277,9 @@ footer {
   }
   .game-top-container {
     margin-top: 10px;
+  }
+  #button-copin-container {
+    margin-left: 6px;
   }
 }
 
