@@ -1,0 +1,38 @@
+body {
+  color: white;
+  background-color: black;
+  font-family: "Audiowide", cursive;
+}
+.navbar-brand {
+  font-size: 2rem;
+}
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Press Start 2P", cursive;
+  margin-bottom: 50px;
+}
+h2 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.5rem;
+}
+
+#nav-rps {
+  background-image: url(images/back-about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+.navbar {
+  background: transparent !important;
+  font-size: 2rem;
+}
+
+.cards {
+  padding: 20px;
+  text-align: center;
+  margin: 5px;
+
+  font-weight: 600;
+}
