@@ -60,6 +60,12 @@ h1 {
   color: #a084e8;
 }
 
+.rps-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0 5vw;
+}
 .player {
   font-size: 3rem;
   margin-bottom: 100px;
@@ -118,13 +124,13 @@ footer {
   background-color: #f11a7b;
 }
 .side-a > p {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 .side-b {
   background-color: #a076f9;
 }
 .side-b > p {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 #coin {
