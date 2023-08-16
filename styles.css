@@ -269,7 +269,6 @@ footer {
   }
   #start-button-coin-head {
     width: 150px;
-    margin-left: 35px;
   }
   #start-button-coin-tail {
     width: 150px;
@@ -279,7 +278,7 @@ footer {
     margin-top: 10px;
   }
   #button-copin-container {
-    margin-left: 6px;
+    margin-left: 4px;
   }
 }
 
