@@ -134,3 +134,4 @@ $(document).ready(function () {
   });
   // END OF COIN FLIP GAME 🧙‍♂️
 });
+
