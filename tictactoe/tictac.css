@@ -1,0 +1,155 @@
+/* Step 1  create the main board */
+
+body {
+  color: white;
+  font-family: "Audiowide", cursive;
+}
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+main {
+  background-image: url("../images/tictac.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  width: 100%;
+}
+.navbar {
+  background: transparent !important;
+  font-size: 2rem;
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+}
+section {
+  background: transparent !important;
+}
+#title-section {
+  margin-top: 0px;
+}
+#game {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  background: transparent !important;
+}
+
+.grid-cell {
+  border: 1px solid #ffffff;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  background: transparent !important;
+}
+/* Step 2 remove unecessary border on the sides  */
+.grid-cell:nth-child(-n + 3) {
+  border-top: none;
+}
+
+.grid-cell:nth-child(3n + 1) {
+  border-left: none;
+}
+
+.grid-cell:nth-child(3n + 3) {
+  border-right: none;
+}
+
+.grid-cell:nth-last-of-type(-n + 3) {
+  border-bottom: none;
+}
+
+/* Step 3 when class change to x or o emoji will show  */
+.x::after {
+  content: "❌";
+}
+
+.o::after {
+  content: "⭕";
+}
+
+/* step 4 indicate already filled div  */
+.disabled {
+  cursor: not-allowed;
+}
+
+.grid-cell:not(.disabled):hover {
+  background: #eee;
+}
+
+/* Step 5 Styling game over text  */
+
+.game-over {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* box-shadow: rgb(0 0 0 / 50%) 0 0 0 9999px; */
+}
+
+.game-over-text {
+  position: absolute;
+  top: -200px;
+  right: -70px;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  transform: translateX(-30%);
+  color: rgb(255, 255, 255);
+}
+.restart {
+  width: 200px;
+  height: 100px;
+}
+
+.visible {
+  display: block;
+}
+
+footer {
+  background: transparent !important;
+}
+@media (max-width: 769px) {
+  .grid-cell {
+    border: 1px solid #ffffff;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    background: transparent !important;
+  }
+}
+@media (max-width: 426px) {
+  main {
+    background-image: url("../images/tictac.jpg");
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    width: 100%;
+  }
+  .grid-cell {
+    border: 1px solid #ffffff;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    background: transparent !important;
+  }
+}

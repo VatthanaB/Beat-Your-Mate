@@ -35,12 +35,8 @@ $(document).ready(function () {
       (player1random === 1 && player2random === 0) ||
       (player1random === 2 && player2random === 1)
     ) {
-      $("#title").html("🚩 Player 1 Wins"); //  replace the text of "Rock Paper Scissors" with "Player 1 Wins"
-
       player1score++; // increase the score of player 1
     } else {
-      $("#title").html("Player 2 Wins 🚩"); //  replace the text of "Rock Paper Scissors" with "Player 2 Wins"
-
       player2score++; // increase the score of player 2
     }
 
