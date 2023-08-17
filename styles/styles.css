@@ -50,7 +50,7 @@ h1 {
 }
 
 #nav-rps {
-  background-image: url(images/background-rps.jpg);
+  background-image: url(../images/background-rps.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -76,7 +76,7 @@ h1 {
 }
 /* Dice Section  */
 #section-dice {
-  background-image: url(images/coin-background.jpg);
+  background-image: url(../images/coin-background.jpg);
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -92,7 +92,7 @@ h1 {
 
 /* Coin Section  */
 #coin-footer {
-  background-image: url(images/bottom-back.jpg);
+  background-image: url(../images/bottom-back.jpg);
   background-size: cover;
   background-position: center;
 }

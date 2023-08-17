@@ -20,7 +20,7 @@ h2 {
 }
 
 #nav-rps {
-  background-image: url(images/back-about.jpg);
+  background-image: url(../images/back-about.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -44,7 +44,7 @@ h2 {
 
 /* contact.html */
 #nav-contact {
-  background-image: url(images/contact-us-back.jpg);
+  background-image: url(../images/contact-us-back.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
