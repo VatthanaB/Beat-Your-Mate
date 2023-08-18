@@ -24,7 +24,11 @@ h1 {
   width: 100%;
 }
 .navbar-brand {
-  font-size: 2rem;
+  font-size: 3rem;
+  background: linear-gradient(to right, #ff0707, #ffc803);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .navbar {
   background: transparent !important;
@@ -48,7 +52,9 @@ h1 {
   font-size: 4rem;
   margin: 5vh 0;
 }
-
+.nav-link {
+  color: #ff0707 !important;
+}
 #nav-rps {
   background-image: url(../images/background-rps.jpg);
   background-size: cover;

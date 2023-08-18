@@ -6,17 +6,28 @@ body {
 }
 
 .navbar-brand {
-  font-size: 2rem;
+  font-size: 3rem;
+  background: linear-gradient(to right, #ff0707, #ffc803);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "Press Start 2P", cursive;
   margin-bottom: 50px;
+  background: linear-gradient(to right, #ff0707, #ffc803);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 h2 {
   font-family: "Press Start 2P", cursive;
-  font-size: 1.5rem;
+  font-size: 2rem;
+}
+p {
+  font-size: 1.2rem;
 }
 
 #nav-rps {
@@ -30,6 +41,9 @@ h2 {
   background: transparent !important;
   font-size: 2rem;
 }
+.nav-link {
+  color: #ff0707 !important;
+}
 #main-about {
   margin-top: 50px;
 }
@@ -37,9 +51,12 @@ h2 {
 .cards {
   padding: 20px;
   text-align: center;
-  margin: 5px;
+  margin: 20px;
 
   font-weight: 600;
+}
+p > a {
+  text-decoration: none;
 }
 
 /* contact.html */
@@ -49,4 +66,9 @@ h2 {
   background-size: cover;
   min-height: 100vh;
   width: 100%;
+}
+
+label {
+  font-size: 1.3rem;
+  font-weight: 600;
 }

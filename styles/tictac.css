@@ -1,29 +1,45 @@
 /* Step 1  create the main board */
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   color: white;
   font-family: "Audiowide", cursive;
 }
 h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 50px;
+  color: rgb(0, 255, 30);
+}
+h2 {
+  font-size: 3rem;
+  color: rgb(255, 251, 13);
 }
 main {
   background-image: url("../images/tictac.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   min-height: 100vh;
-  width: 100%;
+  min-width: 100%;
 }
 .navbar {
   background: transparent !important;
   font-size: 2rem;
   z-index: 1;
 }
+.nav-link {
+  color: #ff0707 !important;
+}
 
 .navbar-brand {
-  font-size: 2rem;
+  font-size: 3rem;
+  background: linear-gradient(to right, #ff0707, #ffc803);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 section {
   background: transparent !important;
@@ -31,11 +47,16 @@ section {
 #title-section {
   margin-top: 0px;
 }
+.score {
+  margin-top: 0px;
+}
+
 #game {
-  position: absolute;
+  /* position: absolute;
   top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(3, auto);
   background: transparent !important;
@@ -44,7 +65,7 @@ section {
 .grid-cell {
   border: 1px solid #ffffff;
   width: 200px;
-  height: 200px;
+  height: 150px;
   cursor: pointer;
   display: flex;
   justify-content: center;
