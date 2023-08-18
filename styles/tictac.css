@@ -10,9 +10,9 @@ body {
 }
 h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 50px;
-  color: rgb(0, 255, 30);
+  color: rgb(255, 0, 0);
 }
 h2 {
   font-size: 3rem;
@@ -56,7 +56,8 @@ section {
   top: 60%;
   left: 50%; */
   /* transform: translate(-50%, -50%); */
-  margin-top: 100px;
+  margin-top: 50px;
+  padding-bottom: 50px;
   display: grid;
   grid-template-columns: repeat(3, auto);
   background: transparent !important;
@@ -65,7 +66,7 @@ section {
 .grid-cell {
   border: 1px solid #ffffff;
   width: 200px;
-  height: 150px;
+  height: 200px;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -121,21 +122,30 @@ section {
 
 .game-over-text {
   position: absolute;
-  top: -200px;
-  right: -70px;
-  font-size: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
   font-weight: bold;
   text-align: center;
-  transform: translateX(-30%);
-  color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
 }
+
 .restart {
+  font-size: 2rem;
   width: 200px;
   height: 100px;
+  position: absolute;
+  top: calc(50% + 200px);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .visible {
   display: block;
+}
+.invisible {
+  display: none;
 }
 
 footer {
@@ -186,5 +196,21 @@ footer {
     align-items: center;
     font-size: 60px;
     background: transparent !important;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .game-over-text {
+    font-size: 3rem;
+    margin-top: 20px;
+  }
+
+  .restart {
+    font-size: 1.5rem;
+    width: 150px;
+    height: 80px;
   }
 }

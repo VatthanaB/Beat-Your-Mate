@@ -66,6 +66,7 @@ document.addEventListener("click", (event) => {
         .querySelectorAll(".grid-cell")
         .forEach((cell) => cell.classList.add("disabled"));
       document.querySelector(".game-over").classList.add("visible");
+      document.querySelector("#game").classList.add("invisible");
       document.querySelector(".game-over-text").textContent = xWins
         ? "X wins!"
         : "O wins!";
@@ -81,6 +82,7 @@ document.addEventListener("click", (event) => {
   //   Check to retart the game
   document.querySelector(".restart").addEventListener("click", () => {
     document.querySelector(".game-over").classList.remove("visible");
+    document.querySelector("#game").classList.remove("invisible");
     document.querySelectorAll(".grid-cell").forEach((cell) => {
       cell.classList.remove("disabled", "x", "o");
     });
