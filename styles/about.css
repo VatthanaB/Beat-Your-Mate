@@ -72,3 +72,10 @@ label {
   font-size: 1.3rem;
   font-weight: 600;
 }
+#contact-touch {
+  font-size: 3rem;
+  background: linear-gradient(to right, #2634b0, #e01313);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
