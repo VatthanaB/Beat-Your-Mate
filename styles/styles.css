@@ -55,7 +55,7 @@ h1 {
 .score {
   font-size: 4rem;
   margin: 5vh 0;
-  color: #a084e8;
+  color: #D22779;
 }
 .nav-link {
   color: #ff0707 !important;
@@ -68,7 +68,7 @@ h1 {
 /* Rock Papper Scissor */
 #section-rps {
   min-height: 100vh;
-  color: #6f61c0;
+  color: #A076F9;
 }
 
 .rps-img {
@@ -80,7 +80,7 @@ h1 {
 .player {
   font-size: 3rem;
   margin-bottom: 100px;
-  color: #8be8e5;
+  color: #5800FF;
 }
 .rps {
   font-size: 8rem;

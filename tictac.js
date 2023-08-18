@@ -54,6 +54,7 @@ document.addEventListener("click", (event) => {
   // This means that if all cells are disabled, then it's a draw
   if (!document.querySelectorAll(".grid-cell:not(.disabled)").length) {
     document.querySelector(".game-over").classList.add("visible");
+    document.querySelector("#game").classList.add("invisible");
     document.querySelector(".game-over-text").textContent = "Draw!";
   }
   //   check for wins as that requires a bit more code. We need to check if any of the winning states are present in either the xState or oState arrays.
