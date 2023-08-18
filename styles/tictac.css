@@ -120,6 +120,20 @@ section {
 footer {
   background: transparent !important;
 }
+
+@media (max-width: 1025px) {
+  .grid-cell {
+    border: 1px solid #ffffff;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    background: transparent !important;
+  }
+}
 @media (max-width: 769px) {
   .grid-cell {
     border: 1px solid #ffffff;
