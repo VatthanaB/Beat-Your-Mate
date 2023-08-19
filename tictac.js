@@ -1,5 +1,5 @@
-player1score = 0;
-player2score = 0;
+let player1score = 0;
+let player2score = 0;
 
 // Creating the game create object to store state of the game
 // xTurn, a flag to switch between turns
@@ -93,3 +93,7 @@ document.addEventListener("click", (event) => {
     game.oState = [];
   });
 });
+
+for (let i = 0; i < 9; i++) {
+  $(".grid").append(`<div class="grid-cell" data-value="${i}"></div>`);
+}

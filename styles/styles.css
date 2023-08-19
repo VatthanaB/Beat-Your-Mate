@@ -8,21 +8,26 @@ body {
   color: white;
   font-family: "Audiowide", cursive;
 }
+
 h1 {
   text-align: center;
   font-family: "Press Start 2P", cursive;
 }
+
 #top-div {
   height: 150px;
 }
+
 #top-image {
   height: 100%;
   width: 100%;
 }
+
 #section-nav {
   height: 100%;
   width: 100%;
 }
+
 .navbar-brand {
   font-size: 3rem;
   background: linear-gradient(to right, #ff0707, #ffc803);
@@ -30,10 +35,12 @@ h1 {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .navbar {
   background: transparent !important;
   font-size: 2rem;
 }
+
 .game-top-container {
   margin-top: 50px;
 }
@@ -52,19 +59,23 @@ h1 {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .score {
   font-size: 4rem;
   margin: 5vh 0;
   color: #d22779;
 }
+
 .nav-link {
   color: #ff0707 !important;
 }
+
 #nav-rps {
   background-image: url(../images/background-rps.jpg);
   background-size: cover;
   background-position: center;
 }
+
 /* Rock Papper Scissor */
 #section-rps {
   min-height: 100vh;
@@ -77,11 +88,13 @@ h1 {
   object-fit: cover;
   margin: 0 5vw;
 }
+
 .player {
   font-size: 3rem;
   margin-bottom: 100px;
   color: #5800ff;
 }
+
 .rps {
   font-size: 8rem;
   margin: 0 100px;
@@ -96,6 +109,7 @@ h1 {
   min-height: 100vh;
   color: #06ff00;
 }
+
 .img1-dice,
 .img2-dice {
   width: 250px;
@@ -110,41 +124,19 @@ h1 {
   background-size: cover;
   background-position: center;
 }
+
 #section-coin {
   min-height: 100vh;
   color: #ffea20;
 }
+
 /* footer */
 footer {
   background: transparent !important;
+  padding-top: 50px;
 }
 
 /* Coin animation  */
-
-#coin div {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border-radius: 50%;
-  border-radius: 50%;
-  box-shadow: inset 0 0 45px rgba(255, 255, 255, 0.3),
-    0 12px 20px -10px rgba(0, 0, 0, 0.4);
-  box-shadow: inset 0 0 45px rgba(255, 255, 255, 0.3),
-    0 12px 20px -10px rgba(0, 0, 0, 0.4);
-  box-shadow: inset 0 0 45px rgba(255, 255, 255, 0.3),
-    0 12px 20px -10px rgba(0, 0, 0, 0.4);
-}
-.side-a {
-  background-color: #f11a7b;
-}
-.side-a > p,
-.side-b > p {
-  font-size: 4rem;
-}
-.side-b {
-  background-color: #a076f9;
-}
-
 #coin {
   transition: transform 1s ease-in;
   transform-style: preserve-3d;
@@ -154,57 +146,63 @@ footer {
   height: 400px;
   width: 400px;
 }
+
 #coin div {
   position: absolute;
   backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: inset 0 0 45px rgba(255, 255, 255, 0.3),
+    0 12px 20px -10px rgba(0, 0, 0, 0.4);
 }
-.side-a {
-  z-index: 100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
+.side-a,
 .side-b {
-  transform: rotateY(-180deg);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.side-a {
+  background-color: #f11a7b;
+}
+
+.side-b {
+  background-color: #a076f9;
+  transform: rotateY(-180deg);
+}
+
+.side-a > p,
+.side-b > p {
+  font-size: 4rem;
+}
+
 #coin.heads {
   animation: flipHeads 3s ease-out forwards;
-  animation: flipHeads 3s ease-out forwards;
-  animation: flipHeads 3s ease-out forwards;
-  animation: flipHeads 3s ease-out forwards;
 }
+
 #coin.tails {
-  animation: flipTails 3s ease-out forwards;
-  animation: flipTails 3s ease-out forwards;
-  animation: flipTails 3s ease-out forwards;
   animation: flipTails 3s ease-out forwards;
 }
 
 @keyframes flipHeads {
   from {
     transform: rotateY(0);
-    transform: rotateY(0);
-    transform: rotateY(0);
   }
   to {
-    transform: rotateY(1800deg);
-    transform: rotateY(1800deg);
     transform: rotateY(1800deg);
   }
 }
+
 @keyframes flipTails {
   from {
     transform: rotateY(0);
-    transform: rotateY(0);
-    transform: rotateY(0);
   }
   to {
-    transform: rotateY(1980deg);
-    transform: rotateY(1980deg);
     transform: rotateY(1980deg);
   }
 }
@@ -214,20 +212,25 @@ footer {
     font-size: 1.5rem;
     width: 250px;
   }
+
   .game-title {
     font-size: 2rem;
   }
+
   .score {
     font-size: 3rem;
     margin: 5vh 0;
   }
+
   .game-top-container {
     margin-top: 10px;
   }
+
   .rps {
     font-size: 6rem;
     margin: 0 50px;
   }
+
   .img1-dice,
   .img2-dice {
     width: 150px;
@@ -235,10 +238,12 @@ footer {
     object-fit: cover;
     margin: 0 5vw;
   }
+
   .player {
     font-size: 2rem;
     margin-bottom: 100px;
   }
+
   .side-a > p,
   .side-b > p {
     font-size: 4rem;
@@ -251,16 +256,20 @@ footer {
     font-size: 1rem;
     width: 200px;
   }
+
   .game-title {
     font-size: 1.5rem;
   }
+
   .score {
     font-size: 2rem;
     margin: 5vh 0;
   }
+
   .rps {
     font-size: 3rem;
   }
+
   .img1-dice,
   .img2-dice {
     width: 100px;
@@ -268,31 +277,36 @@ footer {
     object-fit: cover;
     margin: 0 5vw;
   }
+
   .player {
     font-size: 1.5rem;
     margin: 40px 0;
   }
-  .side-a > p {
-    font-size: 2rem;
-  }
+
+  .side-a > p,
   .side-b > p {
     font-size: 2rem;
   }
+
   #coin {
     height: 300px;
     width: 300px;
     margin-left: 55px;
   }
+
   #start-button-coin-head {
     width: 150px;
   }
+
   #start-button-coin-tail {
     width: 150px;
     margin-right: 0px;
   }
+
   .game-top-container {
     margin-top: 10px;
   }
+
   #button-copin-container {
     margin-left: 4px;
   }
@@ -303,14 +317,17 @@ footer {
     height: 250px;
     width: 250px;
   }
+
   #start-button-coin-head {
     width: 150px;
     margin-left: 0px;
   }
+
   #start-button-coin-tail {
     width: 150px;
     margin-right: 0px;
   }
+
   #button-copin-container {
     margin-left: 4px;
   }
@@ -322,6 +339,7 @@ footer {
   .player {
     margin: 18px;
   }
+
   .side-a > p,
   .side-b > p {
     font-size: 1.5rem;
