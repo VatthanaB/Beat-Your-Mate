@@ -184,6 +184,9 @@ footer {
     font-size: 60px;
     background: transparent !important;
   }
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 426px) {
@@ -208,7 +211,7 @@ footer {
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   h2 {
