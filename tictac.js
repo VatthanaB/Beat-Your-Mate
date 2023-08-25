@@ -1,5 +1,6 @@
-player1score = 0;
-player2score = 0;
+let player1score = 0;
+let player2score = 0;
+
 // Tic Tac Toe
 
 // Creating the game create object to store state of the game
@@ -28,6 +29,7 @@ const game = {
     ["2", "4", "6"],
   ],
 };
+
 // adding click event listener to the board
 document.addEventListener("click", (event) => {
   const target = event.target;
@@ -56,7 +58,7 @@ document.addEventListener("click", (event) => {
   if (!document.querySelectorAll(".grid-cell:not(.disabled)").length) {
     document.querySelector(".game-over").classList.add("visible");
     document.querySelector("#game").classList.add("invisible");
-    document.querySelector(".game-over-text").textContent = "Draw!";
+    document.querySelector(".game-over-text").textContent = "Restart!";
   }
   //   check for wins as that requires a bit more code. We need to check if any of the winning states are present in either the xState or oState arrays.
   game.winningStates.forEach((winningState) => {
@@ -78,12 +80,16 @@ document.addEventListener("click", (event) => {
       const scores = document.querySelectorAll(".score");
       scores.forEach((score) => {
         score.innerHTML = `${player1score} - ${player2score}`;
+        game.xState = [];
+        game.oState = [];
       });
     } else if (oWins) {
       player2score++;
       const scores = document.querySelectorAll(".score");
       scores.forEach((score) => {
         score.innerHTML = `${player1score} - ${player2score}`;
+        game.xState = [];
+        game.oState = [];
       });
     }
   });
@@ -96,7 +102,5 @@ document.addEventListener("click", (event) => {
     });
 
     game.xTurn = true;
-    game.xState = [];
-    game.oState = [];
   });
 });

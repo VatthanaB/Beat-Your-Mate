@@ -1,6 +1,10 @@
 // Player Scores
-let player1score = 0;
-let player2score = 0;
+let player1scoreRps = 0;
+let player2scoreRps = 0;
+let player1scoreDice = 0;
+let player2scoreDice = 0;
+let player1scoreCoin = 0;
+let player2scoreCoin = 0;
 
 // Rock paper scissors variables + array
 const rock = `<i id="rock" class="fa-regular fa-hand-back-fist fa-2xl"></i>`;
@@ -34,15 +38,14 @@ document
       (player1random === 1 && player2random === 0) ||
       (player1random === 2 && player2random === 1)
     ) {
-      player1score++; // Increase the score of player 1
+      player1scoreRps++; // Increase the score of player 1
     } else {
-      player2score++; // Increase the score of player 2
+      player2scoreRps++; // Increase the score of player 2
     }
 
-    const scores = document.querySelectorAll(".score");
-    scores.forEach((score) => {
-      score.innerHTML = `${player1score} - ${player2score}`;
-    });
+    document.getElementById(
+      "score-rps"
+    ).innerHTML = `${player1scoreRps} - ${player2scoreRps}`; // Display the score
   });
 
 // Start Dice game
@@ -66,18 +69,16 @@ document
     // Compare the numbers and display the winner
     if (randomNumber1 > randomNumber2) {
       console.log("Player 1 wins");
-      player1score++;
-      console.log(player1score);
+      player1scoreDice++;
     } else if (randomNumber2 > randomNumber1) {
       console.log("Player 2 wins");
-      player2score++;
+      player2scoreDice++;
     } else {
     }
 
-    const scores = document.querySelectorAll(".score");
-    scores.forEach((score) => {
-      score.innerHTML = `${player1score} - ${player2score}`;
-    }); // Display the score
+    document.getElementById(
+      "score-dice"
+    ).innerHTML = `${player1scoreDice} - ${player2scoreDice}`; // Display the score
   });
 // Start Coin Flip game
 const coinButtons = document.querySelectorAll(
@@ -93,24 +94,23 @@ coinButtons.forEach((button) => {
       if (flipResult <= 0.5) {
         document.querySelector("#coin").classList.add("heads");
         if (button.id === "start-button-coin-head") {
-          player1score++;
+          player1scoreCoin++;
         } else {
-          player2score++;
+          player2scoreCoin++;
         }
       }
       // Otherwise, it is tails + add score to player 2
       else {
         document.querySelector("#coin").classList.add("tails");
         if (button.id === "start-button-coin-head") {
-          player2score++;
+          player2scoreCoin++;
         } else {
-          player1score++;
+          player1scoreCoin++;
         }
       }
-      const scores = document.querySelectorAll(".score");
-      scores.forEach((score) => {
-        score.innerHTML = `${player1score} - ${player2score}`;
-      }); // Display the score
+      document.getElementById(
+        "score-coin"
+      ).innerHTML = `${player1scoreCoin} - ${player2scoreCoin}`; // Display the score
     }, 100);
   });
 });
