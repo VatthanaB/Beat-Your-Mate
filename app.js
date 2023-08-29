@@ -1,20 +1,11 @@
-// Player Scores
+// Start Rock Paper Scissors game  🦄
 let player1scoreRps = 0;
 let player2scoreRps = 0;
-let player1scoreDice = 0;
-let player2scoreDice = 0;
-let player1scoreCoin = 0;
-let player2scoreCoin = 0;
-
-// Rock paper scissors variables + array
 const rock = `<i id="rock" class="fa-regular fa-hand-back-fist fa-2xl"></i>`;
 const paper = `<i id="paper" class="fa-regular fa-hand fa-2xl"></i>`;
 const scissors = `<i id="scissors" class="fa-regular fa-hand-scissors fa-2xl"></i>`;
 const choices = [rock, paper, scissors]; // Array of choices
 
-// Start button click event listener / Load the page before starting the game
-
-// Start Rock Paper Scissors game
 document
   .getElementById("start-button-rps")
   .addEventListener("click", function () {
@@ -48,7 +39,10 @@ document
     ).innerHTML = `${player1scoreRps} - ${player2scoreRps}`; // Display the score
   });
 
-// Start Dice game
+// Start Dice game 🦄
+
+let player1scoreDice = 0;
+let player2scoreDice = 0;
 document
   .getElementById("start-button-dice")
   .addEventListener("click", function () {
@@ -80,15 +74,20 @@ document
       "score-dice"
     ).innerHTML = `${player1scoreDice} - ${player2scoreDice}`; // Display the score
   });
-// Start Coin Flip game
+
+// Start Coin Flip game 🦄
+let player1scoreCoin = 0;
+let player2scoreCoin = 0;
 const coinButtons = document.querySelectorAll(
   "#start-button-coin-head, #start-button-coin-tail"
 );
 coinButtons.forEach((button) => {
   button.addEventListener("click", function () {
     // Generate a random number between 0 and 1
-    var flipResult = Math.random();
+    const flipResult = Math.random();
+
     document.querySelector("#coin").classList.remove("heads", "tails");
+
     setTimeout(function () {
       // Check if the flip result is less than or equal to 0.5 (heads) + add score to player 1
       if (flipResult <= 0.5) {
@@ -111,6 +110,6 @@ coinButtons.forEach((button) => {
       document.getElementById(
         "score-coin"
       ).innerHTML = `${player1scoreCoin} - ${player2scoreCoin}`; // Display the score
-    }, 100);
+    }, 1000);
   });
 });
