@@ -1,6 +1,8 @@
 // Start Rock Paper Scissors game  🦄
 let player1scoreRps = 0;
 let player2scoreRps = 0;
+
+// Font Awesome Icons
 const rock = `<i id="rock" class="fa-regular fa-hand-back-fist fa-2xl"></i>`;
 const paper = `<i id="paper" class="fa-regular fa-hand fa-2xl"></i>`;
 const scissors = `<i id="scissors" class="fa-regular fa-hand-scissors fa-2xl"></i>`;
@@ -88,6 +90,7 @@ coinButtons.forEach((button) => {
 
     document.querySelector("#coin").classList.remove("heads", "tails");
 
+    //  setTimeout make sure that the coin is flipped even when clicked too fast
     setTimeout(function () {
       // Check if the flip result is less than or equal to 0.5 (heads) + add score to player 1
       if (flipResult <= 0.5) {
@@ -110,6 +113,6 @@ coinButtons.forEach((button) => {
       document.getElementById(
         "score-coin"
       ).innerHTML = `${player1scoreCoin} - ${player2scoreCoin}`; // Display the score
-    }, 1000);
+    }, 100);
   });
 });
